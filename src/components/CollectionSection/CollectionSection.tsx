@@ -1,6 +1,5 @@
 import React from 'react';
 import './CollectionSection.css';
- // Import the CSS file for styling
  import m from '../../assets/m.png'
  import line from '../../assets/line.png'
 
@@ -23,7 +22,7 @@ const CollectionSection: React.FC = () => {
           auctor. Vivamus viverra ullamcorper sodales fringilla dignissim egestas. Id
           aliquam at aliquam egestas sed orci pharetra sed arcu.
         </p>
-        <button onClick={() => window.alert('Посмотреть коллекцию')}>
+        <button>
           ПОСМОТРЕТЬ КОЛЛЕКЦИЮ
         </button>
       </div>

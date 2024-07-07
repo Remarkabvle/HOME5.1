@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Pagination from '@mui/material/Pagination';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import './Products.css'; // Assuming you have some styles
+import './Products.css'; 
 
 interface Product {
   id: number;
@@ -47,7 +47,7 @@ const Products: React.FC = () => {
     fetchProducts();
   }, [currentPage]);
 
-  const handlePageChange = (event: React.ChangeEvent<unknown>, page: number) => {
+  const handlePageChange = (_: React.ChangeEvent<unknown>, page: number) => {
     setCurrentPage(page);
   };
 
