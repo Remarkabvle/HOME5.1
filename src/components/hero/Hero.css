@@ -1,0 +1,73 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../../assets/hero.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  padding: 20px;
+  width: 90%; /* Use percentage for flexible width */
+  max-width: 320px; /* Limit max width for larger screens */
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.hero .description {
+  text-transform: uppercase;
+  font-weight: 400;
+  width: 90%; /* Use percentage for flexible width */
+  max-width: 730px; /* Limit max width for larger screens */
+  font-size: 16px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-content__top {
+  border: 3px solid white;
+  padding: 93px 68px; /* Use vw for responsive padding */
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero-content__top h1 {
+  font-weight: 700;
+  font-size: 45px;  /* Use vw for responsive font size */
+  margin: 0;
+}
+
+.hero-content__top img {
+  margin-top: 10px;
+
+}
+
+.hero-content__top p {
+  margin-top: 10px;
+  font-weight: 400;
+ font-size: 20px; /* Use vw for responsive font size */
+  line-height: 1.4; /* Adjust line-height for readability */
+}
+
+@media (min-width: 790px) {
+  .hero-content {
+    width: 320px; /* Revert to original width */
+  }
+
+  .hero .description {
+    width: 730px; /* Revert to original width */
+  }
+
+}

@@ -1,0 +1,133 @@
+.product-list {
+  background-size: cover;
+  background-color: black;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+.product-list .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure responsiveness */
+  padding: 20px;
+}
+.product-list .season {
+  width: 100%;
+  max-width: 600px; /* Adjust max-width for content */
+  margin-bottom: 30px;
+}
+.product-list .season h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 18px;
+  font-weight: 600;
+  line-height: 40.99px;
+}
+.product-list .season .imgn {
+  margin-bottom: 30px;
+}
+.product-list .season .imgn img {
+  max-width: 100%;
+}
+.product-list .season .product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Ensure responsiveness */
+  width: 100%;
+}
+.product-list .season .product-grid .product-card {
+  width: calc(33.33% - 20px); /* Adjust card width for three columns */
+  max-width: 300px;
+  margin-bottom: 20px;
+}
+.product-list .season .product-grid .product-card .product-img {
+  background-color: #1a1a1a;
+  padding: 20px;
+}
+.product-list .season .product-grid .product-card .product-img img {
+  max-width: 100%;
+  border-bottom: 1px solid #333;
+  padding-bottom: 10px;
+}
+.product-list .season .product-grid .product-card .product-info p {
+  margin: 10px 0;
+}
+.product-list .season .product-grid .product-card .product-info p:first-of-type {
+  font-weight: bold;
+}
+.product-list .new-collection {
+  width: 100%;
+  max-width: 600px; /* Adjust max-width for content */
+  background: url("../../assets/prd.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+.product-list .new-collection h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+.product-list .new-collection .catalog-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.product-list .new-collection .catalog-button:hover {
+  background-color: #555;
+}
+.product-list .imgn {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.product-list .imgn img {
+  max-width: 100%;
+}
+@media (max-width: 1300px) {
+  .product-list .new-collection {
+    background: none;
+    padding: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .product-list .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-list .season {
+    margin-bottom: 20px;
+  }
+  .product-list .season h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .product-list .season .product-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-list .season .product-grid .product-card {
+    width: 100%;
+    max-width: 300px;
+  }
+  .product-list .new-collection {
+    padding: 30px;
+  }
+  .product-list .new-collection h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .product-list .new-collection .catalog-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+/*# sourceMappingURL=ProductList.css.map */
